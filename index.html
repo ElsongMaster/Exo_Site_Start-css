@@ -16,51 +16,129 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="container-Navbar">
-        <div class="container-Navbar_text">
-          <p>start css</p>
+    <div class="bodyContent">
+      <header>
+        <div class="container-Navbar">
+          <div class="container-Navbar_text">
+            <p>start css</p>
+          </div>
+
+          <nav>
+            <i class="fas fa-bars"></i>
+            <ul>
+              <li><a href="#">portefolio </a></li>
+
+              <li><a href="#"> about </a></li>
+
+              <li><a href="#">contact </a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">portefolio </a></li>
+        <div class="banniere">
+          <div class="banniere-img">
+            <img src="./public/img/avataaars.svg" alt="" />
+          </div>
 
-            <li><a href="#"> about </a></li>
+          <div class="banniere-text">
+            <h1>start css</h1>
+            <p>Graphic Artist-Web Designer-Illustrator</p>
+          </div>
+        </div>
+      </header>
 
-            <li><a href="#">contact </a></li>
-          </ul>
-        </nav>
+      <div class="contenu">
+        <h2>portefolio</h2>
+        <div class="portefolio-img">
+          <div class="ligne-container">
+            <img src="./public/img/portfolio/cabin.png" alt="" /><img
+              src="./public/img/portfolio/cake.png"
+              alt=""
+            /><img src="./public/img/portfolio/circus.png" alt="" />
+          </div>
+          <div class="ligne-container">
+            <img src="./public/img/portfolio/game.png" alt="" /><img
+              src="./public/img/portfolio/safe.png"
+              alt=""
+            /><img src="./public/img/portfolio/submarine.png" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="banniere">
-        <div class="banniere-img">
-          <img src="./public/img/avataaars.svg" alt="" />
+      <div class="container-about">
+        <div class="about-title">
+          <h2>About</h2>
         </div>
-
-        <div class="banniere-text">
-          <h1>start css</h1>
-          <p>Graphic Artist-Web Designer-Illustrator</p>
+        <div class="about-paraph">
+          <p>
+            Freelancer is a free bootstrap theme created by Start Bootstrap.The
+            download includes the complete source files including HTML,CSS, and
+            Javascript as well as optional SASS stylesheets for easy
+            customization.
+          </p>
         </div>
-      </div>
-    </header>
-
-    <div class="contenu">
-      <h2>portefolio</h2>
-      <div class="portefolio-img">
-        <div class="ligne-container">
-          <img src="./" alt="" /><img src="" alt="" /><img src="" alt="" />
-        </div>
-        <div class="ligne-container">
-          <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+        <div class="about-paraph">
+          <p>
+            You can create your own custom avatar for the masthead, change the
+            icon in the dividers, and add your email adress to the contact form
+            to make it fully functional!
+          </p>
         </div>
       </div>
+
+      <div class="container-form">
+        <h2>Contact me</h2>
+        <form action="">
+          <div class="form-line">
+            <label for="" id="name">Name</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="form-line">
+            <label for="" id="email">Email Adress</label>
+            <input type="text" name="email" />
+          </div>
+          <div class="form-line">
+            <label for="" id="phone-number">Phone Number</label>
+            <input type="text" name="phone-number" />
+          </div>
+          <div class="form-line">
+            <label for="" id="message">Message</label>
+            <textarea name="message" id="" cols="30" rows="8"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <footer>
+        <div>
+          <div class="footer-section">
+            <div class="footer-section_contenu">
+              <h3>location</h3>
+              <p>2215 John Daniel Drive</p>
+              <p>Clark, MO 65243</p>
+            </div>
+          </div>
+          <div class="footer-section">
+            <div class="footer-section_contenu">
+              <h3>around the web</h3>
+              <div class="social-icon">
+                <i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i
+                ><i class="fab fa-linkedin-in"></i
+                ><i class="fas fa-basketball-ball"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section">
+            <div class="footer-section_contenu">
+              <h3>about freelancer</h3>
+              <p>freelance is free to use, MIT</p>
+              <p>licensed Bootstrap theme created by</p>
+              <p>Start Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          copyright <i class="far fa-copyright"></i> Your Website 2020
+        </div>
+      </footer>
     </div>
-
-    <footer>
-      <h2></h2>
-      <div class="footer-text">
-        <div><p></p></div>
-        <div><p></p></div>
-      </div>
-    </footer>
   </body>
 </html>
