@@ -24,6 +24,12 @@ header {
   border: 2px solid brown;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 header *,
 .container-about * {
   color: white;
@@ -118,21 +124,80 @@ a {
   border: 2px solid rgb(25, 19, 31);
 }
 
-@media (min-width: 600px) and (max-width: 950px) {
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .contenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .portefolio-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ligne-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    min-width: 50%;
+  }
+  .portefolio-img img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .ligne-about {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-paraph {
+    width: 50%;
+    padding: 35px;
+  }
+  .about-paraph p {
+    font-size: 1.7vw;
+  }
+
+  .container-form {
+    padding: 50px;
+  }
+  .container-form * {
+    font-size: 2.5vw;
+  }
+
+  .footer-section p {
+    padding: 0;
+    margin: 0 0 0 25px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
   .container-Navbar {
   }
   .container-Navbar * {
     width: 100%;
   }
+
   nav {
-    width: 20% !important;
+    width: fit-content !important;
+  }
+  .fas {
+    border: 2px solid white;
+    padding: 2px;
   }
 
   ul {
-    height: 100%;
+    display: none;
+    /* height: 100%;
     width: 100% !important;
     flex-direction: column;
-    width: fit-content !important;
+    width: fit-content !important; */
   }
 }
 
@@ -161,6 +226,7 @@ h2 {
   align-items: center;
   border: 2px solid rgba(40, 85, 105, 0.836);
   height: fit-content;
+  margin-bottom: 30px;
 }
 form {
   width: 90%;
@@ -206,6 +272,10 @@ footer > div:first-of-type {
 }
 
 .footer-section_contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   border: 2px solid rgb(109, 61, 63);
 }
 .social-icon {
@@ -216,6 +286,9 @@ footer > div:first-of-type {
   border: 2px solid white;
   border-radius: 50%;
   padding: 10px;
+}
+.social-icon i:first-of-type {
+  padding: 10px 14px;
 }
 
 .social-icon i:last-of-type {
